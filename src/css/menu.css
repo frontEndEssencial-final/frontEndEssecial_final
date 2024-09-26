@@ -1,0 +1,115 @@
+:root {
+    --color-primary-1: #003f5c; 
+    --color-primary-2: #007f97; 
+    --color-primary-3: #00b8d4; 
+    --color-primary-4: #e0f7fa; 
+    --color-primary-5: #0095a8; 
+    --color-primary-6: #00acc1; 
+    --color-neutral-0: #ffffff; 
+    --color-neutral-1: #f1f1f1; 
+    --color-neutral-2: #434343; /* Cinza escuro para textos */
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--color-neutral-1); /* Fundo claro */
+    padding: 40px 0;
+}
+
+#menu .section-title {
+    font-size: 2.5rem;
+    color: var(--color-primary-1); /* Azul escuro para títulos */
+}
+
+#menu .section-subtitle {
+    font-size: 1.5rem;
+    color: var(--color-primary-2); /* Azul médio para subtítulos */
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+#dishes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 32px;
+    flex-wrap: wrap;
+}
+
+.dish {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    gap: 18px;
+    width: 25%;
+    padding: 20px;
+    background-color: var(--color-neutral-0); /* Fundo branco */
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dish:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.dish-heart {
+    position: absolute;
+    background-color: var(--color-primary-6); /* Azul vibrante para destaque */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.563rem;
+    color: var(--color-neutral-0); /* Ícone branco no coração */
+    width: 70px;
+    height: 70px;
+    right: -10px;
+    top: -10px;
+    border-radius: 0px 37.5px 0px 42.5px;
+}
+
+.dish-description {
+    color: var(--color-neutral-2); /* Texto cinza escuro para melhor contraste */
+    text-align: center;
+}
+
+.dish-rate i {
+    color: var(--color-primary-6); /* Estrelas em azul vibrante */
+}
+
+.dish-price {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.25rem;
+    color: var(--color-primary-1); /* Azul escuro para o preço */
+}
+
+@media screen and (max-width: 1170px) {
+    #dishes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .dish {
+        width: calc(50% - 12px); /* Ajuste de largura para dispositivos menores */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .dish {
+        width: 100%; /* Largura total para telas pequenas */
+    }
+
+    #menu .section-subtitle {
+        text-align: center;
+    }
+}

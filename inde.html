@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Restaurante com cardápio variado e avaliações de clientes">
+    <title>Restaurante Food</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<main>
+    <header>
+        <nav id="navbar" aria-label="Main Navigation">
+            <i class="fa-solid fa-burger" id="nav_logo"> Food</i>
+            <ul id="nav_list">
+                <li class="nav-item active"><a href="#home">Início</a></li>
+                <li class="nav-item"><a href="#menu">Cardápio</a></li>
+                <li class="nav-item"><a href="#testimonials">Avaliações</a></li>
+                <li class="nav-item"><a href="#login">Login</a></li>
+                <li class="nav-item"><a href="#register">Cadastro</a></li>
+            </ul>
+            <button class="btn-default">Peça aqui</button>
+            <button id="mobile_btn"><i class="fa-solid fa-bars"></i></button>
+        </nav>
+        
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item"><a href="#home">Início</a></li>
+                <li class="nav-item"><a href="#menu">Cardápio</a></li>
+                <li class="nav-item"><a href="#testimonials">Avaliações</a></li>
+                <li class="nav-item"><a href="#login">Login</a></li>
+                <li class="nav-item"><a href="#register">Cadastro</a></li>
+            </ul>
+            <button class="btn-default">Peça aqui</button>
+        </div>
+    </header>
+
+    <main id="content">
+        <!-- Seção de Início -->
+        <section id="home">
+            <div class="shape"></div>
+            <div id="cta">
+                <h1 class="title">O sabor que vai até <span>você!</span></h1>
+                <p class="description">Não dá pra voltar no tempo, mas sempre dá pra pedir uma comida deliciosa</p>
+                <div id="cta_buttons">
+                    <a href="#menu" class="btn-default">Ver cardápio</a>
+                    <a href="tel:+55555555555" id="phone_button">
+                        <button class="btn-default"><i class="fa-solid fa-phone"></i></button>
+                        (51) 92342-3243
+                    </a>
+                </div>
+                <div class="social-media-buttons">
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+            <div id="banner">
+                <img src="src/images/dish5.png" alt="Banner principal do restaurante">
+            </div>
+        </section>
+
+        <!-- Seção de Login -->
+        <section id="login">
+            <h2 class="section-title">Login</h2>
+            <form id="login-form" action="#" method="POST">
+                <button type="submit" class="btn-default">Entrar</button>
+                <p>Não tem uma conta? <a href="#register">Cadastre-se</a></p>
+            </form>
+        </section>
+
+       
+        <!-- Outras seções: Cardápio, Avaliações, etc. -->
+        <!-- (Manter conforme o código anterior) -->
+    </main>
+
+    <section id="menu">
+        <h2 class="section_title">Opções práticas para o dia a dia</h2>
+        <div id="dishes">
+            <!-- Receita 1 -->
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <h3>Strogonoff de Frango</h3>
+                <img src="src/images/strogonoff.png" class="dish-image" alt="Strogonoff de Frango" />
+                <p>Essa é uma sugestão de almoço prático para o dia a dia.</p>
+                <h4>Ingredientes</h4>
+                <ul>
+                    <li>1 colher (sobremesa) de azeite</li>
+                    <li>400g de tiras de frango</li>
+                    <li>1 colher (café) de sal</li>
+                    <li>3 colheres (sopa) de ketchup</li>
+                    <li>1 lata de creme de leite</li>
+                </ul>
+                <h4>Modo de Preparo</h4>
+                <p>Em uma panela, aqueça o azeite, refogue a cebola e o alho. Adicione as tiras de frango e cozinhe até dourar. Tempere e finalize com o creme de leite.</p>
+            </div>
+
+            <!-- Receita 2 -->
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <h3>Pavê</h3>
+                <img src="src/images/pave.jpeg" class="dish-image" alt="Pavê" />
+                <p>Sugestão de sobremesa deliciosa.</p>
+                <h4>Ingredientes</h4>
+                <ul>
+                    <li>1 pacote de bolacha maisena</li>
+                    <li>400 ml de leite</li>
+                    <li>1 caixa de leite condensado</li>
+                </ul>
+                <h4>Modo de Preparo</h4>
+                <p>Prepare o creme com leite, leite condensado e gema, montando camadas com a bolacha.</p>
+            </div>
+
+            <!-- Receita 3 -->
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <h3>Bolo de Cenoura</h3>
+                <img src="src/images/bolo.jpeg" class="dish-image" alt="Bolo de Cenoura" />
+                <p>Perfeito para o café da tarde.</p>
+                <h4>Ingredientes</h4>
+                <ul>
+                    <li>3 ovos</li>
+                    <li>1/2 xícara de óleo</li>
+                    <li>260g de cenouras picadas</li>
+                </ul>
+                <h4>Modo de Preparo</h4>
+                <p>Bata os ingredientes no liquidificador, asse e cubra com a calda de chocolate.</p>
+            </div>
+        </div>
+    </section>
+</main>
+       
+    <footer>
+            
+            <span id="copyright">&copy 2024 Grupo 4</span>
+            <div class="social-media-buttons">
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/javascript/script.js" defer></script>
+</body>
+</html>
