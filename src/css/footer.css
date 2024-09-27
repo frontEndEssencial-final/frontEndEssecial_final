@@ -3,24 +3,25 @@ footer {
     background-color: #0056b3; /* Azul escuro para o background do rodapé */
 }
 
+footer {
+    background-color: var(--color-primary-2);
+}
+
 #footer_items {
     display: flex;
     justify-content: space-between;
-    padding: 0 8% 24px 8%;
+    padding: 0px 8% 24px 8%;
     align-items: center;
-    color: #ffffff;
 }
 
 #copyright {
-    color: #b0bec5; /* Azul claro para o copyright */
+    color: var(--color-neutral-1);;
     font-weight: 500;
-    font-size: 0.9rem;
 }
 
 @media screen and (max-width: 600px) {
     #footer_items {
         flex-direction: column;
         gap: 20px;
-        text-align: center;
     }
 }
