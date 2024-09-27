@@ -16,7 +16,7 @@ header {
 
 #nav_logo {
     font-size: 24px;
-    color: #0a0a0a; /* Azul escuro para o logo */
+    color: #00796b; /* Azul escuro */
 }
 
 #nav_list {
@@ -27,13 +27,18 @@ header {
 
 .nav-item a {
     text-decoration: none;
-    color: #1d1d1dad; /* Mantive o cinza para o texto inativo */
+    color: #004d40; /* Azul mais escuro */
     font-weight: 600;
+    transition: color 0.3s ease; 
 }
 
 .nav-item.active a {
-    color: #ffffffa4; /* Texto branco quando ativo */
+    color: #ffffff; /* Texto branco quando ativo */
     border-bottom: 3px solid #00acc1; /* Azul escuro para o item ativo */
+}
+
+.nav-item a:hover {
+    color: #00796b; /* Azul escuro no hover */
 }
 
 #mobile_btn {
@@ -45,34 +50,31 @@ header {
 }
 
 @media screen and (max-width: 1170px) {
-    #nav_list,
+    #nav_list, 
     #navbar .btn-default {
         display: none;
     }
-
     #mobile_btn {
         display: block;
         border: none;
         background-color: transparent;
         font-size: 1.5rem;
         cursor: pointer;
+        color: #004d40; /* Azul mais escuro */
     }
-
     #mobile_menu.active {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
     #mobile_nav_list {
         display: flex;
         flex-direction: column;
         gap: 12px;
-        margin: 12px 0px;
+        margin: 12px 0;
     }
-
     #mobile_nav_list .nav-item {
         list-style: none;
         text-align: center;
-    } 
+    }
 }

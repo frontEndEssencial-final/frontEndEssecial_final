@@ -11,16 +11,22 @@
 <main>
     <header>
         <nav id="navbar" aria-label="Main Navigation">
-            <i class="fa-solid fa-burger" id="nav_logo"> Food</i>
+            <i class="fa-solid fa-burger" id="nav_logo"> FoodExpress</i>
             <ul id="nav_list">
                 <li class="nav-item active"><a href="#home">Início</a></li>
                 <li class="nav-item"><a href="#menu">Cardápio</a></li>
                 <li class="nav-item"><a href="#testimonials">Avaliações</a></li>
-                <li class="nav-item"><a href="#login">Login</a></li>
-                <li class="nav-item"><a href="#register">Cadastro</a></li>
+                <li class="nav-item"><a href="#quemsomosnos">Quem somos nós</a></li>
+                <li class="nav-item"><a href="#carrinho">carrinho</a></li>
             </ul>
-            <button class="btn-default">Peça aqui</button>
+               <!-- Seção de Login -->
+            <section id="login">
+        
+                <button type="submit" class="btn-default">Entrar</button>      
+               </form>
+            </section>
             <button id="mobile_btn"><i class="fa-solid fa-bars"></i></button>
+  
         </nav>
         
         <div id="mobile_menu">
@@ -28,13 +34,14 @@
                 <li class="nav-item"><a href="#home">Início</a></li>
                 <li class="nav-item"><a href="#menu">Cardápio</a></li>
                 <li class="nav-item"><a href="#testimonials">Avaliações</a></li>
-                <li class="nav-item"><a href="#login">Login</a></li>
-                <li class="nav-item"><a href="#register">Cadastro</a></li>
+                <li class="nav-item"><a href="#quemsomosnos">Quem somos nós</a></li>
+               
+      
             </ul>
-            <button class="btn-default">Peça aqui</button>
+            <button class="btn-default">Carrinho</button>
         </div>
     </header>
-
+   
     <main id="content">
         <!-- Seção de Início -->
         <section id="home">
@@ -48,6 +55,8 @@
                         <button class="btn-default"><i class="fa-solid fa-phone"></i></button>
                         (51) 92342-3243
                     </a>
+
+                 
                 </div>
                 <div class="social-media-buttons">
                     <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
@@ -55,87 +64,197 @@
                     <a href="#"><i class="fa-brands fa-facebook"></i></a>
                 </div>
             </div>
+
+            
             <div id="banner">
-                <img src="src/images/dish5.png" alt="Banner principal do restaurante">
+                <img src="src/images/hero.png" alt="Banner principal do restaurante">
             </div>
         </section>
 
-        <!-- Seção de Login -->
-        <section id="login">
-            <h2 class="section-title">Login</h2>
-            <form id="login-form" action="#" method="POST">
-                <button type="submit" class="btn-default">Entrar</button>
-                <p>Não tem uma conta? <a href="#register">Cadastre-se</a></p>
-            </form>
-        </section>
-
+        
        
         <!-- Outras seções: Cardápio, Avaliações, etc. -->
         <!-- (Manter conforme o código anterior) -->
     </main>
 
     <section id="menu">
-        <h2 class="section_title">Opções práticas para o dia a dia</h2>
+        <h2 class="section-title">Cardápio</h2>
+        <h3 class="section-subtitle">Nossos pratos especiais</h3>
+
         <div id="dishes">
-            <!-- Receita 1 -->
             <div class="dish">
                 <div class="dish-heart">
                     <i class="fa-solid fa-heart"></i>
                 </div>
-                <h3>Strogonoff de Frango</h3>
-                <img src="src/images/strogonoff.png" class="dish-image" alt="Strogonoff de Frango" />
-                <p>Essa é uma sugestão de almoço prático para o dia a dia.</p>
-                <h4>Ingredientes</h4>
-                <ul>
-                    <li>1 colher (sobremesa) de azeite</li>
-                    <li>400g de tiras de frango</li>
-                    <li>1 colher (café) de sal</li>
-                    <li>3 colheres (sopa) de ketchup</li>
-                    <li>1 lata de creme de leite</li>
-                </ul>
-                <h4>Modo de Preparo</h4>
-                <p>Em uma panela, aqueça o azeite, refogue a cebola e o alho. Adicione as tiras de frango e cozinhe até dourar. Tempere e finalize com o creme de leite.</p>
+
+                <img src="src/images/strogo.png" class="dish-image" alt="">
+
+                <h3 class="dish-title">
+                    Lorem Ipsum
+                </h3>
+
+                <span class="dish-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$20,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
             </div>
 
-            <!-- Receita 2 -->
             <div class="dish">
                 <div class="dish-heart">
                     <i class="fa-solid fa-heart"></i>
                 </div>
-                <h3>Pavê</h3>
-                <img src="src/images/pave.jpeg" class="dish-image" alt="Pavê" />
-                <p>Sugestão de sobremesa deliciosa.</p>
-                <h4>Ingredientes</h4>
-                <ul>
-                    <li>1 pacote de bolacha maisena</li>
-                    <li>400 ml de leite</li>
-                    <li>1 caixa de leite condensado</li>
-                </ul>
-                <h4>Modo de Preparo</h4>
-                <p>Prepare o creme com leite, leite condensado e gema, montando camadas com a bolacha.</p>
+
+                <img src="src/images/peixe.png" class="dish-image" alt="">
+
+                <h3 class="dish-title">
+                    Lorem Ipsum
+                </h3>
+
+                <span class="dish-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$20,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
             </div>
 
-            <!-- Receita 3 -->
             <div class="dish">
                 <div class="dish-heart">
                     <i class="fa-solid fa-heart"></i>
                 </div>
-                <h3>Bolo de Cenoura</h3>
-                <img src="src/images/bolo.jpeg" class="dish-image" alt="Bolo de Cenoura" />
-                <p>Perfeito para o café da tarde.</p>
-                <h4>Ingredientes</h4>
-                <ul>
-                    <li>3 ovos</li>
-                    <li>1/2 xícara de óleo</li>
-                    <li>260g de cenouras picadas</li>
-                </ul>
-                <h4>Modo de Preparo</h4>
-                <p>Bata os ingredientes no liquidificador, asse e cubra com a calda de chocolate.</p>
+
+                <img src="src/images/muse.png" class="dish-image" alt="">
+
+                <h3 class="dish-title">
+                    Lorem Ipsum
+                </h3>
+
+                <span class="dish-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$20,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <img src="src/images/pudim.png" class="dish-image" alt="">
+
+                <h3 class="dish-title">
+                    Lorem Ipsum
+                </h3>
+
+                <span class="dish-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$20,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
             </div>
         </div>
     </section>
+<section id="testimonials">
+    <h2 class="section-title">Depoimentos</h2>
+    <h3 class="section-subtitle">O que os usuários falam sobre nós.</h3>
+    <div id="feedback">
+        <div class="feedback">
+            <img src="src/images/avatar.png" alt="Larissa Teodoro">
+            <div class="feedback-content">
+                <p>Larissa Teodoro
+                    <span>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                </p>
+                <p>"Receitas Maravilhosas"</p>
+            </div>
+        </div>
+        <div class="feedback">
+            <img src="src/images/avatar.png" alt="Monica">
+            <div class="feedback-content">
+                <p>Monica
+                    <span>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                </p>
+                <p>"Amei muito"</p>
+            </div>
+        </div>
+    </div>
+    <button class="btn-default">Ver mais avaliações</button>
+</section>
 </main>
-       
+<section id="cadastro">
+        
+   
+    <p>Não tem uma conta? <a href="#register">Cadastre-se</a></p>
+</form>
+</section>
     <footer>
             
             <span id="copyright">&copy 2024 Grupo 4</span>

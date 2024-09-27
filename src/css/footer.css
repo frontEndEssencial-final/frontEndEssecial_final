@@ -6,18 +6,21 @@ footer {
 #footer_items {
     display: flex;
     justify-content: space-between;
-    padding: 0px 8% 24px 8%;
+    padding: 0 8% 24px 8%;
     align-items: center;
+    color: #ffffff;
 }
 
 #copyright {
-    color: #ffffff; /* Texto branco para o copyright */
+    color: #b0bec5; /* Azul claro para o copyright */
     font-weight: 500;
+    font-size: 0.9rem;
 }
 
 @media screen and (max-width: 600px) {
     #footer_items {
         flex-direction: column;
         gap: 20px;
+        text-align: center;
     }
 }

@@ -29,7 +29,7 @@ html {
 }
 
 body {
-    background-color: var(--color-primary-1); 
+    background-color: #e0f7fa; 
 }
 
 section {
@@ -41,17 +41,19 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--color-primary-5); 
+    background-color: #64b5f6 ; 
     border-radius: 12px;
     padding: 10px 14px;
     font-weight: 600;
-    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    transition: background-color .3s ease;
+    transition: background-color .3s ease transform 0.2s;
 }
 
 .btn-default:hover {
-    background-color: var(--color-primary-3); 
+    background-color: #005b4f; /* Azul escuro */
+    transform: translateY(-3px); /* Efeito de elevação ao hover */ 
 }
 
 .social-media-buttons {
@@ -65,25 +67,27 @@ section {
     justify-content: center;
     width: 45px;
     height: 40px;
-    background-color: var(--color-neutral-0);
+    background-color: #ffffff;
     font-size: 1.25rem;
-    border-radius: 10px;
+    border-radius: 50%px;
     text-decoration: none;
     color: var(--color-neutral-1);
     box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
     transition: box-shadow .3s ease;
 }
 
-.social-media-buttons a:hover {
-    box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
+.social-midia-buttons a:hover {
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Sombra mais forte ao hover */
+    transform: scale(1.1); /* Efeito de zoom */
 }
 
 .section-title {
-    color: var(--color-primary-6); 
-    font-size: 1.563rem;
+    color: #005b4f; /* Azul escuro */
+    font-size: 2rem; /* Tamanho da fonte ajustado */
+    margin-bottom: 16px; /* Espaçamento inferior */
 }
 
 .section-subtitle {
-    font-size: 2.1875rem;
-    color: var(--color-primary-4); 
+    font-size: 1.875rem; /* Tamanho da fonte ajustado */
+    color: #004d40; /* Azul ainda mais escuro */
 }
