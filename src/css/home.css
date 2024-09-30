@@ -10,7 +10,7 @@
     --color-neutral-3: #343a40; 
 }
 
-#home {
+#home { 
     display: flex;
     min-height: calc(100vh - 91px);
     position: relative;
@@ -18,7 +18,7 @@
 }
 
 #cta {
-    width: 35%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 28px;
@@ -27,7 +27,7 @@
 
 #cta .title {
     font-size: 4rem;
-    color: #004d40 
+    color: #004d40;
 }
 
 #cta .title span {
@@ -48,7 +48,6 @@
     text-decoration: none;
     color: #000000; /* Azul escuro */
     padding: 10px 20px; /* Adicionado padding */
-
     border-radius: 5px; /* Cantos arredondados */
     transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
 }
