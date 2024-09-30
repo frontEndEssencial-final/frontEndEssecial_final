@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Restaurante com cardápio variado e avaliações de clientes">
+ 
     <link rel="stylesheet" href="src/css/styles.css">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
     <script src="https://kit.fontawesome.com/5878ec6b89.js" crossorigin="anonymous"></script>
@@ -18,7 +19,7 @@
             <ul id="nav_list">
                 <li class="nav-item active"><a href="#home">Início</a></li>
                 <li class="nav-item"><a href="#menu">Opções do Dia</a></li>
-                <li class="nav-item"><a href="./src/html/cardapiooo.html">Cardápio</a></li> <!-- Link para o cardápio -->
+                <li class="nav-item"><a href="./src/html/cardapiooo.html">Cardápio</a></li>
                 <li class="nav-item"><a href="#testimonials">Avaliações</a></li>
                 <li class="nav-item"><a href="#quemsomosnos">Quem Somos Nós</a></li>
             </ul>
@@ -27,105 +28,121 @@
             </section>
             <button id="mobile_btn"><i class="fa-solid fa-bars"></i></button>
         </nav>
+        
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item"><a href="#home">Início</a></li>
+                <li class="nav-item"><a href="#menu">Opções do Dia</a></li>
+                <li class="nav-item"><a href="./src/html/cardapiooo.html">Cardápio</a></li>
+                <li class="nav-item"><a href="#testimonials">Avaliações</a></li>
+                <li class="nav-item"><a href="#quemsomosnos">Quem Somos Nós</a></li>
+            </ul>
+            <button class="btn-default">Opções do Dia</button>
+        </div>
     </header>
-
-    <section id="home">
-        <div class="shape"></div>
-        <div id="cta">
-            <h1 class="title">O sabor que vai até <span>você!</span></h1>
-            <p class="description">Não dá pra voltar no tempo, mas sempre dá pra pedir uma comida deliciosa.</p>
-            <div id="cta_buttons">
-                <a href="./src/html/cardapiooo.html" class="btn-default">Ver Cardápio</a> <!-- Link para o cardápio -->
-                <a href="tel:+55555555555" id="phone_button">
-                    <button class="btn-default">
-                        <i class="fa-solid fa-phone"></i>
-                    </button>
-                    (51) 92342-3243
-                </a>
-            </div>
-        </div>
-        <div id="banner">
-            <img src="src/images/hero.png" alt="Banner principal do restaurante">
-        </div>
-    </section>
-
-    <section id="menu">
-        <h2 class="section-title">Opções do Dia</h2>
-        <h3 class="section-subtitle">Nossos Pratos e Sobremesas Especiais</h3>
-        <div id="dishes">
-            <!-- Cada prato em um loop para simplicidade -->
-            <div class="dish">
-                <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
-                <img src="src/images/strogo.png" class="dish-image" alt="Strogonoff">
-                <h3 class="dish-title">Strogonoff</h3>
-                <span class="dish-description">Arroz, strogonoff de frango, batata palha e salada.</span>
-                <div class="dish-rate"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <span>(500+)</span></div>
-                <div class="dish-price"><h4>R$25,00</h4><button class="btn-default"><i class="fa-solid fa-basket-shopping"></i></button></div>
-            </div>
-            <div class="dish">
-                <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
-                <img src="src/images/peixe.png" class="dish-image" alt="Peixe Frito">
-                <h3 class="dish-title">Peixe Frito</h3>
-                <span class="dish-description">Arroz, feijão, peixe frito, batata frita e salada.</span>
-                <div class="dish-rate"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <span>(500+)</span></div>
-                <div class="dish-price"><h4>R$35,00</h4><button class="btn-default"><i class="fa-solid fa-basket-shopping"></i></button></div>
-            </div>
-            <div class="dish">
-                <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
-                <img src="src/images/muse.png" class="dish-image" alt="Mousse de Maracujá">
-                <h3 class="dish-title">Mousse de Maracujá</h3>
-                <span class="dish-description">Sobremesa.</span>
-                <div class="dish-rate"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <span>(500+)</span></div>
-                <div class="dish-price"><h4>R$20,00</h4><button class="btn-default"><i class="fa-solid fa-basket-shopping"></i></button></div>
-            </div>
-            <div class="dish">
-                <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
-                <img src="src/images/pudim.png" class="dish-image" alt="Pudim">
-                <h3 class="dish-title">Pudim</h3>
-                <span class="dish-description">Sobremesa.</span>
-                <div class="dish-rate"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <span>(500+)</span></div>
-                <div class="dish-price"><h4>R$20,00</h4><button class="btn-default"><i class="fa-solid fa-basket-shopping"></i></button></div>
-            </div>
-        </div>
-    </section>
-
-    <section id="testimonials">
-        <h2 class="section-title">Depoimentos</h2>
-        <h3 class="section-subtitle">O que os usuários falam sobre nós.</h3>
-        <div id="feedback">
-            <div class="feedback">
-                <img src="src/images/avatar.png" alt="Thaís Santos">
-                <div class="feedback-content">
-                    <p>Thaís Santos</p>
-                    <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i></span>
-                    <q>Comida Maravilha</q>
+   
+    <main id="content">
+        <section id="home">
+            <div class="shape"></div>
+            <div id="cta">
+                <h1 class="title">O sabor que vai até <span>você!</span></h1>
+                <p class="description">Não dá pra voltar no tempo, mas sempre dá pra pedir uma comida deliciosa.</p>
+                <div id="cta_buttons">
+                    <a href="./src/html/cardapiooo.html" class="btn-default">Ver Cardápio</a>
+                    <a href="tel:+55555555555" id="phone_button">
+                        <button class="btn-default">
+                            <i class="fa-solid fa-phone"></i>
+                        </button>
+                        (51) 92342-3243
+                    </a>
+                </div>
+                <div class="social-media-buttons">
+                    <a href="api.whatsapp.com/send?phone=5524992384225"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/restaurante.obelisco/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100065082231096&mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
                 </div>
             </div>
-            <div class="feedback">
-                <img src="src/images/avatar.png" alt="Carla Daniele">
-                <div class="feedback-content">
-                    <p>Carla Daniele</p>
-                    <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i></span>
-                    <q>Amei muito a comida desse restaurante, além da entrega ser super rápida.</q>
+            <div id="banner">
+                <img src="src/images/hero.png" alt="Banner principal do restaurante">
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2 class="section-title">Opções do Dia</h2>
+            <h3 class="section-subtitle">Nossos Pratos Especiais</h3>
+            <div id="dishes">
+                <!-- Cada prato em um loop para simplicidade -->
+                <div class="dish">
+                    <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
+                    <img src="src/images/strogo.png" class="dish-image" alt="Strogonoff">
+                    <h3 class="dish-title">Strogonoff</h3>
+                    <span class="dish-description">Arroz, strogonoff de frango, batata palha e salada.</span>
+                    <div class="dish-rate"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <span>(500+)</span></div>
+                    <div class="dish-price"><h4>R$25,00</h4><button class="btn-default"><i class="fa-solid fa-basket-shopping"></i></button></div>
+                </div>
+                <div class="dish">
+                    <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
+                    <img src="src/images/peixe.png" class="dish-image" alt="Peixe Frito">
+                    <h3 class="dish-title">Peixe Frito</h3>
+                    <span class="dish-description">Arroz, feijão, peixe frito, batata frita e salada.</span>
+                    <div class="dish-rate"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <span>(500+)</span></div>
+                    <div class="dish-price"><h4>R$35,00</h4><button class="btn-default"><i class="fa-solid fa-basket-shopping"></i></button></div>
+                </div>
+                <div class="dish">
+                    <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
+                    <img src="src/images/muse.png" class="dish-image" alt="Mousse de Maracujá">
+                    <h3 class="dish-title">Mousse de Maracujá</h3>
+                    <span class="dish-description">Sobremesa.</span>
+                    <div class="dish-rate"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <span>(500+)</span></div>
+                    <div class="dish-price"><h4>R$20,00</h4><button class="btn-default"><i class="fa-solid fa-basket-shopping"></i></button></div>
+                </div>
+                <div class="dish">
+                    <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
+                    <img src="src/images/pudim.png" class="dish-image" alt="Pudim">
+                    <h3 class="dish-title">Pudim</h3>
+                    <span class="dish-description">Sobremesa.</span>
+                    <div class="dish-rate"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <span>(500+)</span></div>
+                    <div class="dish-price"><h4>R$20,00</h4><button class="btn-default"><i class="fa-solid fa-basket-shopping"></i></button></div>
                 </div>
             </div>
-        </div>
-        <button class="btn-default">Ver mais avaliações</button>
-    </section>
-</main>
+        </section>
 
-<section id="cadastro">
-    <p>Não tem uma conta? <a href="#register">Cadastre-se</a></p>
-</section>
-
-<footer>
-    <img src="src/images/image.png" alt="">
-    <span id="copyright">&copy; 2024 Grupo 4</span>
-    <div class="social-media-buttons">
-        <a href="api.whatsapp.com/send?phone=5524992384225"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="https://www.instagram.com/restaurante.obelisco/"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.facebook.com/profile.php?id=100065082231096&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+        <section id="testimonials">
+            <h2 class="section-title">Depoimentos</h2>
+            <h3 class="section-subtitle">O que os usuários falam sobre nós.</h3>
+            <div id="feedback">
+                <div class="feedback">
+                    <img src="src/images/avatar.png" alt="Thaís Santos">
+                    <div class="feedback-content">
+                        <p>Thaís Santos</p>
+                        <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i></span>
+                        <q>Comida Maravilha</q>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <img src="src/images/avatar.png" alt="Carla Daniele">
+                    <div class="feedback-content">
+                        <p>Carla Daniele</p>
+                        <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i></span>
+                        <q>Amei muito a comida desse restaurante, além da entrega ser super rápida.</q>
+                    </div>
+                </div>
             </div>
-</footer>
-     
- 
+            <button class="btn-default">Ver mais avaliações</button>
+        </section>
+    </main>
+
+    <section id="cadastro">
+        <p>Não tem uma conta? <a href="#register">Cadastre-se</a></p>
+    </section>
+
+    <footer>
+        <img src="src/images/image.png" alt="">
+        <span id="copyright">&copy; 2024 Grupo 4</span>
+        <div class="social-media-buttons">
+            <a href="api.whatsapp.com/send?phone=5524992384225"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/restaurante.obelisco/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100065082231096&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+    </footer>
+         
