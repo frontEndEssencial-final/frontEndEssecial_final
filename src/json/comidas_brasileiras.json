@@ -72,15 +72,15 @@
     {
         "id": 11,
         "nome": "Torta de Brigadeiro",
-        "preco": 3.5,
-        "descricao": "Doce tradicional brasileiro feito com leite condensado e chocolate.",
+        "preco": 10.5,
+        "descricao": "Doce tradicional brasileiro feito com leite condensado e chocolate. (fatia)",
         "imagem": "../images/fotosCardapio/torta_de_brigadeiro.png"
     },
     {
         "id": 12,
         "nome": "Pudim de Leite",
         "preco": 9.0,
-        "descricao": "Pudim de leite condensado com calda de caramelo.",
+        "descricao": "Pudim de leite condensado com calda de caramelo. (fatia)",
         "imagem": "../images/fotosCardapio/pudim_leite.png"
     },
     {
