@@ -14,7 +14,6 @@ const btnAplicarCupom = document.querySelector(".btn_aplicar");
 const btnContinuar = document.querySelector(".btn_continuar");
 const btnFinalizarCompra = document.querySelector(".btn_finalizar_compra");
 const inputCupom = document.getElementById("cupom");
-const produtos = document.querySelector(".container");
 const progressBar = document.getElementById("progress-bar");
 
 let cart = [];
@@ -181,7 +180,7 @@ const calcularFrete = () => {
 
 const cupomDesconto = () => {
   const couponCode = inputCupom.value.trim();
-  if (couponCode === "felipemelhorprof") {
+  if (couponCode === "felipeeshow") {
     const subTotal = parseFloat(
       spanSubTotal.innerHTML
         .replace("R$ ", "")
