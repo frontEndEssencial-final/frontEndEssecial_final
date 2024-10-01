@@ -13,14 +13,19 @@ html {
 
 .column {
   float: left;
-  width: 16.6%;
+  width: 30%;
   margin-bottom: 16px;
-  padding: 0 8px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 40px;
 }
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 5px;
+  background-color: white;
+  margin: 10.5px;
+  margin-left: 24%;
+  margin-right: -7%;
 }
 
 .about-section {
@@ -65,21 +70,37 @@ html {
 h2 {
   color: #017666;
   line-height: 1.0;
-  margin-top: 3%;
+  margin-top: 2%;
+  text-align: center;
+  margin-bottom: -8.5%;
+  padding: -10%;
+}
+
+h3 {
+  color: #06463e;
+  padding: 9%;
+  margin-bottom: -6%;
+  text-align: center;
+  font-size: 18px;
+
 }
 
 #Grupo {
   margin-top: 0%;
-  margin-bottom: 4%;
+  margin-bottom: 0%;
 }
 
-#Quem {
+#Sobre {
   font-size: 50px;
-  margin-top: -2%;
+  margin-top: -3%;
+  margin-bottom: 5%;
 }
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
+
+#nome {
+  color: #005b4f;
+  font-size: 1.7rem;
+  margin-bottom: -10px;
+  margin-top: 5px;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1;
 }
